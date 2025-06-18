@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Shake A Wallpaper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GenshinImpact" />
+    <meta name="twitter:creator" content="@GenshinImpact" />
+    <meta property="og:image" content="https://genshin-wallpaper.web.app/img/og.jpg" />
+    <meta property="og:title" content="Shake A Wallpaper" />
+    <meta name="description" content="Dear Travelers, do you want to try something fun with Paimon? Tap and Shake A Wallpaper now!" />
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Site Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNZNCEJ3BT"></script>
+    <script>
+        const GA_MEASUREMENT_ID_1 = 'G-SNZNCEJ3BT';
+        const GA_MEASUREMENT_ID_2 = 'G-DQFR8VSWEQ';
+        const GA_PROJECT_NAME = 'gi-shake-to-wish';
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        function gaPageView(url, title) { gtag('config', GA_MEASUREMENT_ID_1, { page_path: GA_PROJECT_NAME + '/' + url, page_title: GA_PROJECT_NAME + '/' + title}); };
+        function gaEvent(eventName, category, label, value) { gtag('event', eventName, { 'category': category, 'label': label, 'value': value });};
+        gtag('js', new Date());
+        gtag('config', GA_MEASUREMENT_ID_1, { 'cookie_expires': 0, 'send_page_view': false });
+        gtag('config', GA_MEASUREMENT_ID_2, { 'cookie_expires': 0, 'send_page_view': false });
+    </script>
+    <!-- End Global Site Tag -->
+
+</head>
+
+<body>
+    
+    <div id="main" class="main-light">
+        <div id="modal" class="modal"><span class="modal-close-btn">&times;</span><img class="modal-content" id="modal-image"></div>
+        <div id="landing-view"></div>
+        <div id="instructions-view" style="display: none;"></div>
+        <div id="shake-view" style="display: none;"></div>
+        <div id="result-view" style="display: none;"></div>
+        <div id="reward-view" style="display: none;"></div>
+        <div id="reward-collection-view" style="display: none;"></div>
+    </div>
+    
+    <script type="text/javascript" src="js/shake.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function(event) {
+            initLandingPage();
+        });
+    </script>
+    
+</body>
+
+</html>
